@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>JAVASCRIPT Cheat-Sheet</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header-inner">
+      <div>
+        <nav id="main-nav">
+          <p>&nbsp;</p>
+          <ul>
+            <li><a href="index.html">Resume</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javascript.html" class="current">Javascript</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- Javascript Cheat-Sheet -->
+    <main>
+      <h1 class="cheatsheet-h1"><span class="javascript-span">JAVASCRIPT</span> CHEAT SHEET</h1>
+      <h3 class="cheatsheet-h3">Useful Javascript keywords and methods</h3>
+      <div class="cheat-box cheat-box-left">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_let.asp"><p class="cheatsheet-tag"><span class="javascript-span">let</span>&nbsp&nbsp keyword</p></a>
+        <p>
+          The <strong>let keyword</strong> was introduced in ES6 (2015).
+          Variables defined with let cannot be Redeclared.
+          Variables defined with let must be Declared before use.
+          Variables defined with let have Block Scope.<br><br>
+          <ul>
+            <li>Before ES6 (2015), JavaScript had only Global Scope and Function Scope.</li><br>
+            <li>ES6 introduced two important new JavaScript keywords: let and const.</li>
+            <li>These two keywords provide Block Scope in JavaScript.</li>
+            <li> Variables declared inside a { } block cannot be accessed from outside the block</li>
+          </ul>
+        </p>
+      </div>
+      <div class="cheat-box">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_const.asp"><p class="cheatsheet-tag"><span class="javascript-span">const</span>&nbsp&nbsp keyword</p></a>
+        <p>
+          The <strong>const keyword</strong> was introduced in ES6 (2015).
+          Variables defined with const cannot be Redeclared.
+          Variables defined with const cannot be Reassigned.
+          Variables defined with const have Block Scope.<br>
+          <strong>When to use JavaScript const?</strong>
+          As a general rule, always declare a variable with const unless you know that the value will change.
+          Use const when you declare:
+          <ul>
+            <li>A new Array</li>
+            <li>A new Object</li>
+            <li>A new Function</li>
+            <li>A new RegExp</li>
+          </ul>
+        </p>
+      </div>
+      <div class="cheat-box cheat-box-left">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_string_methods.asp"><p class="cheatsheet-tag"><span class="javascript-span">slice (&nbsp)</span>&nbsp&nbsp method</p></a>
+        <p>
+          <strong>slice()</strong> extracts a part of a string and returns the extracted part in a new string.
+          The method takes 2 parameters: the start position, and the end position (end not included).
+          Remember: JavaScript counts positions from zero. First position is 0.
+          <br>
+          If a parameter is negative, the position is counted from the end of the string.
+          <br>
+          This example slices out a portion of a string from position -12 to position -6:
+        </p>
+      </div>
+      <div class="cheat-box">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_string_methods.asp"><p class="cheatsheet-tag"><span class="javascript-span">toUpperCase (&nbsp)</span>&nbsp&nbsp method</p></a>
+        <p>
+          A string is converted to upper case with <strong>toUpperCase()</strong>
+        </p>
+      </div>
+      <div class="cheat-box cheat-box-left">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_string_methods.asp"><p class="cheatsheet-tag"><span class="javascript-span">toLowerCase (&nbsp)</span>&nbsp&nbsp method</p></a>
+        <p>
+          A string is converted to lower case with <strong>toLowerCase()</strong>
+        </p>
+      </div>
+      <div class="cheat-box">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_string_methods.asp"><p class="cheatsheet-tag"><span class="javascript-span">charAt (&nbsp)</span>&nbsp&nbsp method</p></a>
+        <p>
+          The <strong>charAt()</strong> method returns the character at a specified index (position) in a string.
+        </p>
+      </div>
+      <div class="cheat-box cheat-box-left">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_string_methods.asp"><p class="cheatsheet-tag"><span class="javascript-span">split (&nbsp)</span>&nbsp&nbsp method</p></a>
+        <p>
+          A string can be converted to an array with the <strong>split()</strong> method.
+          If the separator is omitted, the returned array will contain the whole string in index [0].
+          If the separator is "", the returned array will be an array of single characters:
+        </p>
+      </div>
+      <div class="cheat-box">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_number_methods.asp"><p class="cheatsheet-tag"><span class="javascript-span">toString (&nbsp)</span>&nbsp&nbsp method</p></a>
+        <p>
+          The <strong>toString()</strong> method returns a number as a string.
+          All number methods can be used on any type of numbers (literals, variables, or expressions)
+        </p>
+      </div>
+      <div class="cheat-box cheat-box-left">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_dates.asp"><p class="cheatsheet-tag"><span class="javascript-span">Date Object</span></p></a>
+        <p>
+          By default, JavaScript will use the browser's time zone and display a date as a full text string:
+          <br>
+          <strong>Dec 12 2021 12:56:15 GMT-0700 (Mountain Standard Time)</strong><br>
+          Date objects are created with the new Date() constructor.
+          There are 4 ways to create a new date object:
+          <ul>
+            <strong><li>new Date()</li></strong>
+            <strong><li>new Date(year, month, day, hours, minutes, seconds, milliseconds)</li></strong>
+            <strong><li>new Date(milliseconds)</li></strong>
+            <strong><li>new Date(date string)</li></strong>
+          </ul>
+        </p>
+        <br>
+        <p id="dateField" class="javascriptExample"></p>
+        <p id="timeField" class="javascriptExample"></p>
+      </div>
+      <div class="cheat-box">
+        <a class="cheatsheet-a" href="https://www.w3schools.com/js/js_random.asp"><p class="cheatsheet-tag"><span class="javascript-span">Math.random (&nbsp)</span>&nbsp&nbsp method</p></a>
+        <p>
+          <strong>Math.random()</strong> returns a random number between 0 (inclusive),  and 1 (exclusive)
+          <strong>Math.random()</strong> always returns a number lower than 1.
+        </p>
+        <p id="randomNum" class="javascriptExample"></p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2021. All Rights Reserved</p>
+      </div>
+    </footer>
+
+  <script src="js/secondaryScript.js"></script>
+  </body>
+</html>
